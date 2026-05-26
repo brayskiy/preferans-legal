@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Preferans</title>
+  <meta name="description" content="Privacy policy for the Preferans Android app: collects no data, no network, all data stored locally.">
+  <style>
+    :root {
+      --felt-900: #12301C;
+      --felt-700: #1F4D2E;
+      --felt-500: #2F7346;
+      --gold:     #C8A24B;
+      --ivory:    #F3ECD8;
+      --ivory-dim:#C9C3B2;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: linear-gradient(180deg, var(--felt-900) 0%, var(--felt-700) 100%);
+      color: var(--ivory);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 28px 80px;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 2.6rem);
+      color: var(--gold);
+      margin: 0 0 .25rem;
+      letter-spacing: .5px;
+    }
+    .subtitle {
+      color: var(--ivory-dim);
+      margin: 0 0 2.5rem;
+      font-style: italic;
+    }
+    h2 {
+      color: var(--gold);
+      border-bottom: 1px solid rgba(200, 162, 75, .35);
+      padding-bottom: .35rem;
+      margin-top: 2.25rem;
+    }
+    p { margin: .75rem 0; }
+    ul { padding-left: 1.4rem; }
+    li { margin: .35rem 0; }
+    strong { color: #F3ECD8; }
+    code {
+      background: rgba(0, 0, 0, .35);
+      border: 1px solid rgba(200, 162, 75, .25);
+      border-radius: 4px;
+      padding: .1rem .35rem;
+      font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace;
+      font-size: .92em;
+    }
+    a { color: var(--gold); text-decoration: none; border-bottom: 1px dotted var(--gold); }
+    a:hover { color: #E2C682; border-bottom-style: solid; }
+    .lede {
+      background: rgba(0, 0, 0, .25);
+      border-left: 3px solid var(--gold);
+      padding: 1rem 1.25rem;
+      border-radius: 0 6px 6px 0;
+      margin: 1.5rem 0;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(200, 162, 75, .25);
+      color: var(--ivory-dim);
+      font-size: .9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy — Preferans</h1>
+    <p class="subtitle">
+      <strong>Effective date:</strong> May 20, 2026 &nbsp;·&nbsp;
+      <strong>Developer:</strong> Boris Rayskiy (Intellectual Software Solutions) &nbsp;·&nbsp;
+      <strong>Contact:</strong> <a href="mailto:brayskiy@gmail.com">brayskiy@gmail.com</a>
+    </p>
+
+    <div class="lede">
+      This privacy policy explains how the Preferans Android application (“the app”) handles your information.
+      The short version: <strong>the app collects nothing, sends nothing, and stores everything locally on your device.</strong>
+    </div>
+
+    <h2>Information we collect</h2>
+    <p>We do not collect any personal information. The app does not register accounts, ask for sign-in, or identify you in any way.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>The app stores the following on your device only, using Android’s standard local storage (<code>SharedPreferences</code> and a single private file named <code>pref_score</code>):</p>
+    <ul>
+      <li>Your in-game preferences (table surface, card deck style, sound, vibrate, bidding conventions, etc.)</li>
+      <li>Your local high-score table for completed games</li>
+    </ul>
+    <p>This information never leaves your device. It is not transmitted to us, to any server, or to any third party. Uninstalling the app permanently removes it.</p>
+
+    <h2>Network access</h2>
+    <p>The app makes no network requests. It does not contain analytics, crash-reporting, advertising, or tracking SDKs of any kind. The Android manifest declares no internet permission.</p>
+
+    <h2>Permissions</h2>
+    <p>The app requests one Android permission:</p>
+    <ul>
+      <li><strong><code>VIBRATE</code></strong> — used solely to provide haptic feedback when it becomes your turn (if you have enabled the “Vibrate” option in Settings). This permission has no privacy implications.</li>
+    </ul>
+
+    <h2>Children’s privacy</h2>
+    <p>The app is suitable for general audiences and does not knowingly collect any data from anyone, including children under 13. Because no data is collected at all, the app is compliant with COPPA, GDPR, and similar regulations by design.</p>
+
+    <h2>Third-party services</h2>
+    <p>The app uses no third-party services, SDKs, analytics, advertising, or content-delivery networks. The only third-party code in the app consists of standard Android system libraries (<code>androidx.*</code>, the Material Components library, Kotlin coroutines), none of which transmit data from this app.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy is ever updated, the new version will be published at the same URL and the effective date above will change. Material changes will also be noted in the app’s release notes.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy can be sent to <a href="mailto:brayskiy@gmail.com">brayskiy@gmail.com</a>.</p>
+
+    <footer>© Boris Rayskiy · <a href="./">Preferans on GitHub Pages</a></footer>
+  </main>
+</body>
+</html>
